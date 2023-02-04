@@ -1,0 +1,26 @@
+var clothes = []
+clothes.push("Shirt")
+clothes.push("Pants")
+clothes.push("Shorts")
+clothes.push("Tie")
+clothes.push("Suit")
+
+// Logging array
+console.log(clothes)
+
+// Pop function with resutls
+clothes.pop()
+console.log(clothes)
+
+// Adding new clothing with pop
+clothes.push("Underwear")
+console.log(clothes)
+
+// Displaying third item on list
+console.log(clothes[2])
+
+var favCar = {}
+favCar.color = "White"
+favCar.convertible = false
+
+console.log(favCar)

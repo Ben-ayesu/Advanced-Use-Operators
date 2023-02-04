@@ -1,3 +1,5 @@
+// Dot Notation
+
 // Objects creation
 var user = {
 
@@ -43,3 +45,26 @@ console.log(house); // {rooms: 3, color: "brown", priceUSD: 10000, windows: 10}
 
 house.windows = 11;
 console.log(house); // {rooms: 3, color: "brown", priceUSD: 10000, windows: 11}
+
+// Bracket Notation
+var house2 = {};
+house2["rooms"] = 4;
+house2['color']= "pink";
+house2["priceUSD"] = 12345;
+console.log(house2); // {rooms: 4, color: 'pink', priceUSD: 12345}
+
+// Can use either dot or bracket notation
+var car = {};
+car.color = "red";
+car["color"] = "green";
+car["speed"] = 200;
+car.speed = 100;
+console.log(car); // {color: "green", speed: 100}
+
+// With the brackets notation, I can add space characters inside property names, like this: 
+car["number of doors"] = 4;
+console.log(car); // {color: 'green', speed: 100, number of doors: 5}
+
+// Additionally, I can add numbers (as the string data type) as property keys:  
+car["2022"] = 1901;
+console.log(car); // {2022: 1901, color: 'green', speed: 100, number of doors: 5}
