@@ -68,3 +68,13 @@ console.log(car); // {color: 'green', speed: 100, number of doors: 5}
 // Additionally, I can add numbers (as the string data type) as property keys:  
 car["2022"] = 1901;
 console.log(car); // {2022: 1901, color: 'green', speed: 100, number of doors: 5}
+
+// Object with properties and methods
+var car = {};
+car.mileage = 98765;
+car.color = "red";
+console.log(car);
+car.turnTheKey = function() {
+    console.log("The engine is running")
+}
+console.log(car);
