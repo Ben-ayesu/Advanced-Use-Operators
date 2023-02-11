@@ -55,5 +55,3 @@ droneKeys.forEach( function(key) {
     result.push(key, drone[key])
 })
 console.log(result)
-
-//
