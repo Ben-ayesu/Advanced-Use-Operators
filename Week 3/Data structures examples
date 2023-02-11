@@ -1,0 +1,59 @@
+// Working with arrays in JavaScript
+
+// forEach method()
+const fruits = ['kiwi','mango','apple','pear'];
+function appendIndex(fruit, index) {
+    console.log(`${index}. ${fruit}`)
+}
+fruits.forEach(appendIndex);
+
+// function that the forEach() method needs to use is passed in directly into the method call
+const veggies = ['onion', 'garlic', 'potato'];
+veggies.forEach( function(veggie, index) {
+    console.log(`${index}. ${veggie}`);
+});
+
+// filter() method
+// Similar to the forEach() method, the filter() method also accepts a function and that function performs some work on each of the items in the array.
+const nums = [0,10,20,30,40,50];
+nums.filter( function(num) {
+    return num > 20;
+})
+
+// map method
+let nummbers = [0,10,20,30,40,50].
+nummbers.map( function(num) {
+    return num / 10
+    // output: [0,1,2,3,4,5]
+})
+
+// Working with maps in javascript
+let bestBoxers = new Map();
+bestBoxers.set(1, "The Champion");
+bestBoxers.set(2, "The Runner-up");
+bestBoxers.set(3, "The third place");
+
+console.log(bestBoxers);
+
+bestBoxers.get(1)
+
+// Working with Sets in javascript
+const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits);
+
+// Code output: {'apple', 'pear', 'plum'}
+
+// Object example
+const result = [];
+const drone = {
+    speed: 100,
+    color: 'yellow'
+}
+const droneKeys = Object.keys(drone);
+droneKeys.forEach( function(key) {
+    result.push(key, drone[key])
+})
+console.log(result)
+
+//
