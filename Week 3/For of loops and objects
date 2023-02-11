@@ -1,0 +1,38 @@
+// Objects are not iterable but arrays are:
+const colors = ['red','orange','yellow']
+for (var color of colors) {
+    console.log(color);
+}
+
+// Object.keys()
+const car2 = {
+    speed: 200,
+    color: "red"
+}
+console.log("The keys of this car2 object are ", Object.keys(car2)); // ['speed','color']
+
+// Object.value()
+const car3 = {
+    speed: 300,
+    color: "yellow"
+}
+console.log("The value of the keys for car3 object are " ,Object.values(car3)); // [300, 'yellow']
+
+// Object.entries(): returns the list of both the keys and values
+const car4 = {
+    speed: 400,
+    color: 'magenta'
+}
+console.log("The key and clues of car4 object are: ", Object.entries(car4));
+
+// Looping over any objects' own properties keys and values
+var clothingItem = {
+    price: 50,
+    color: 'beige',
+    material: 'cotton',
+    season: 'autumn'
+}
+
+for(i of Object.keys(clothingItem)) {
+    console.log(i, " : ", clothingItem[i])
+}
